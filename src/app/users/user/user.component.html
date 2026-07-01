@@ -1,8 +1,5 @@
 <div>
-  <a routerLink="/tasks"
-    [queryParams]="{name: user().name}"
-  
-  >
+  <a [routerLink]="['/users', user().id]"  [queryParams]="{name: user().name}">
     <img [src]="imagePath()" [alt]="user().name" />
     <span>{{ user().name }}</span>
   </a>
