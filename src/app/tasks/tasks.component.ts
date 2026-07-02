@@ -19,6 +19,8 @@ export class TasksComponent implements OnInit {
 
   username: string = '';
 
+  username2: string = '';
+
 
 
   constructor(private activatedRoute: ActivatedRoute) {}
